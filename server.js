@@ -32,8 +32,8 @@ app.get("/send", async (req, res, next) => {
   const mailOptions = {
     from: "support <support@versionxpress.com>",
     to: "samsonmeseretb@gmail.com",
-    subject: options.subject,
-    text: options.message,
+    subject: "options.subject",
+    text: "options.message",
   };
   await transporter.sendMail(mailOptions);
 
@@ -42,4 +42,4 @@ app.get("/send", async (req, res, next) => {
   });
 });
 
-app.listen(8000, console.log("server running"));
+app.listen(8000, console.log("server running 8000"));
